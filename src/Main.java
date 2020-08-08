@@ -45,7 +45,7 @@ public class Main {
             catch (Exception err) {
             	System.out.println("Ada error "+notif);
             	System.out.println("Anda akan kembali ke menu");
-            	// menu();
+            	menu();
             	return;
             }
             
@@ -136,37 +136,25 @@ public class Main {
     }
 
     public static void main(String[] args) {
-    
-    	  book.add(new Book("K001", "Akuntansi Dasar SMK/MAK Kelas X (Program Akuntansi & Keuangan)",
-                  "Dwi Harti", 148000, 10));
-          book.add(new Book("K002", "Sma/Ma Kl.12 Matematika Peminatan Rev.2020 Kur.2013",
-                  "ANNA YUNI ASTUTI, MIYANTO, NGAPININGSIH", 20000, 10));
-          book.add(new Book("K003", "Kamus Bahasa Indonesia",
-                  "MANDA PUTERI, S.PD", 199000, 10));
-          book.add(new Book("K004", "Puebi & Pedoman Pembentukan Istilah Terlengkap",
-                  "Bright Learning Center", 59000, 10));
-          book.add(new Book("K005", "Teori Dan Algoritma Graph Dengan Bahasa Java + Cd",
-                  "Cipta Ramadhani, S.T.,M.Eng", 94000, 10));
-          menu();
     	
-//    	try{
-//            book.add(new Book("K001", "Akuntansi Dasar SMK/MAK Kelas X (Program Akuntansi & Keuangan)",
-//                    "Dwi Harti", 148000, 10));
-//            book.add(new Book("K002", "Sma/Ma Kl.12 Matematika Peminatan Rev.2020 Kur.2013",
-//                    "ANNA YUNI ASTUTI, MIYANTO, NGAPININGSIH", 20000, 10));
-//            book.add(new Book("K003", "Kamus Bahasa Indonesia",
-//                    "MANDA PUTERI, S.PD", 199000, 10));
-//            book.add(new Book("K004", "Puebi & Pedoman Pembentukan Istilah Terlengkap",
-//                    "Bright Learning Center", 59000, 10));
-//            book.add(new Book("K005", "Teori Dan Algoritma Graph Dengan Bahasa Java + Cd",
-//                    "Cipta Ramadhani, S.T.,M.Eng", 94000, 10));
-//            menu();
-//        }catch (Exception etc){
-//            notif = etc;
-//        } finally {
-//            System.out.println("\nInputan Anda tidak sesuai format. \nAnda akan kembali ke menu");
-//            menu();
-//        }
+   	try{
+           book.add(new Book("K001", "Akuntansi Dasar SMK/MAK Kelas X (Program Akuntansi & Keuangan)",
+                   "Dwi Harti", 148000, 10));
+           book.add(new Book("K002", "Sma/Ma Kl.12 Matematika Peminatan Rev.2020 Kur.2013",
+                   "ANNA YUNI ASTUTI, MIYANTO, NGAPININGSIH", 20000, 10));
+           book.add(new Book("K003", "Kamus Bahasa Indonesia",
+                   "MANDA PUTERI, S.PD", 199000, 10));
+           book.add(new Book("K004", "Puebi & Pedoman Pembentukan Istilah Terlengkap",
+                   "Bright Learning Center", 59000, 10));
+           book.add(new Book("K005", "Teori Dan Algoritma Graph Dengan Bahasa Java + Cd",
+                   "Cipta Ramadhani, S.T.,M.Eng", 94000, 10));
+           menu();
+       }catch (Exception etc){
+           notif = etc;
+       } finally {
+           System.out.println("\nInputan Anda tidak sesuai format. \nAnda akan kembali ke menu");
+           menu();
+       }
 
     }
 }
