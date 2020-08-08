@@ -39,13 +39,13 @@ public class Main {
                         System.exit(5);
                     }
                     default:System.out.println("Pilihan Tidak Ada");
-                        //menu();
+                        menu();
                 }
             }
             catch (Exception err) {
             	System.out.println("Ada error "+notif);
             	System.out.println("Anda akan kembali ke menu");
-            	menu();
+            	// menu();
             	return;
             }
             
